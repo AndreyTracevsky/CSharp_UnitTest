@@ -7,10 +7,12 @@ namespace MyCalculator.BL.Tests
     public class MyCalculatorTests
     {
         [DataTestMethod]
-        [DataRow(-1, 1, 0)]
-        [DataRow(10, 11, 21)]
-        [DataRow(11, 1, 12)]
-        [DataRow(10, 1, 11)]
+        [DataRow(-1, 3, 2)]
+        [DataRow(-1, 11, 10)]
+        [DataRow(-1, -11, -12)]
+        [DataRow(-10.9, 3.4, -7.5)]
+        [DataRow(-10.9, -3.4, -14.3)]
+        [DataRow(10.9, 3.4, 14.3)]
 
 
         public void SummWithDifrentValue(double left, double right, double expected)

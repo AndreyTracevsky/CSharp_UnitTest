@@ -17,7 +17,7 @@ namespace MyCalculator.BL
         }
         public double Minus(double left, double right)
         {
-            return left - right;
+            return Math.Round(left - right, RoundDigits);
         }
         public double Dividirses(double left, double right)
         {
@@ -26,7 +26,7 @@ namespace MyCalculator.BL
 
         public double Multiplicacions(double left, double right)
         {
-            return left * right;
+            return Math.Round(left * right, RoundDigits);
         }
         public double Sqrt(double value)
         {

@@ -71,6 +71,7 @@ namespace MyCalculator.BL.Tests
             Assert.AreEqual(expected, actual);
         }
 
+
         [DataTestMethod]
         [DataRow(16, 256)]
         public void Exponentiation(double value, double expected)

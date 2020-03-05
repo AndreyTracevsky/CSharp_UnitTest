@@ -32,5 +32,9 @@ namespace MyCalculator.BL
         {
             return Math.Round( Math.Sqrt(value), RoundDigits);
         }
+        public double Exponentiation(double value)
+        {
+            return Math.Round(Math.Pow(value, 2), RoundDigits);
+        }
     }
 }

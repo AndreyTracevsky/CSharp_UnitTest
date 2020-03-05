@@ -70,5 +70,14 @@ namespace MyCalculator.BL.Tests
             var actual = calculator.Sqrt(value); 
             Assert.AreEqual(expected, actual);
         }
+
+        [DataTestMethod]
+        [DataRow(16, 256)]
+        public void Exponentiation(double value, double expected)
+        {
+            var calculator = new MyCalculator(8);
+            var actual = calculator.Exponentiation(value);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
